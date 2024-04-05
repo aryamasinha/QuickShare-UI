@@ -13,7 +13,6 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-
       <Image
       src="/logo.png"
       width={500}
