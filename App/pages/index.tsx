@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,13 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+
+      <Image
+      src="/logo.png"
+      width={500}
+      height={500}
+      alt="Picture of the author"
+      />
       <h2> Build using Next JS  , deployed on vercel </h2>      
         
       </main>
