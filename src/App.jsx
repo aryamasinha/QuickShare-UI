@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import ResponsiveAppBar from './Navbar';
-import { Button as BaseButton, buttonClasses } from '@mui/base/Button';
+import Button from '@mui/material/Button';
 
 const divStyle = {
 
@@ -16,54 +16,22 @@ const divStyle = {
 
 };
 
-const Button = styled(BaseButton)(
-  ({ theme }) => `
-  font-family: serif;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  background-color: ${'#1976d2'};
-  padding: 8px 16px;
-  border-radius: 8px;
-  color: white;
-  transition: all 150ms ease;
-  cursor: pointer;
-  border: 1px solid ${'#1976d2'};
-  box-shadow: 0 2px 1px ${
-    theme.palette.mode === 'dark' ? 'rgba(0, 0, 0, 0.5)' : 'rgba(45, 45, 60, 0.2)'
-  }, inset 0 1.5px 1px ${'434D5B'}, inset 0 -2px 1px ${'434D5B'};
 
-  &:hover {
-    background-color: ${'B6FFFA'};
-  }
+const btnStyle = {
+  
+  color: '#003C43',
+  fontFamily: 'monospace',
+  fontSize: '1rem',
+  fontWeight: '400'
 
-  &.${buttonClasses.active} {
-    background-color: ${'434D5B'};
-    box-shadow: none;
-    transform: scale(0.99);
-  }
+};
 
-  &.${buttonClasses.focusVisible} {
-    box-shadow: 0 0 0 4px ${theme.palette.mode === 'dark' ? '434D5B' : '434D5B'};
-    outline: none;
-  }
-
-  &.${buttonClasses.disabled} {
-    background-color: ${theme.palette.mode === 'dark' ? '434D5B' : '434D5B'};
-    color: ${theme.palette.mode === 'dark' ? '434D5B' : '434D5B'};
-    border: 0;
-    cursor: default;
-    box-shadow: none;
-    transform: scale(1);
-  }
-  `,
-);
 
 const Textarea = styled(BaseTextareaAutosize)(
   ({ theme }) => `
   box-sizing: border-box;
   width: 600px;
-  font-family: serif;
+  fontFamily: 'monospace',
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -96,7 +64,9 @@ export default function App() {
     <main>
     
     <ResponsiveAppBar></ResponsiveAppBar>
-    <h2 style={divStyle}>Enter Code Snippet</h2>
+    <br></br>
+    <h2 style={btnStyle}>Enter Code Snippet</h2>
+    <br></br>
       <center>
       <Textarea
         aria-label="minimum height"
@@ -105,7 +75,7 @@ export default function App() {
       />
       <br></br>
       <br></br>
-      <Button> Generate URL </Button>
+      <Button variant="text" style={btnStyle}>Generate Shareable Link</Button>
       <br></br>
       </center>
     </main>
