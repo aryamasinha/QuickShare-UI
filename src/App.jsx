@@ -94,10 +94,9 @@ export default function App() {
   return (
   <center>
     <main>
-    
     <ButtonAppBar></ButtonAppBar>
     <h2 style={divStyle}>Enter Code Snippet</h2>
-      <center>
+    <center>
       <Textarea
         aria-label="minimum height"
         minRows={20}
