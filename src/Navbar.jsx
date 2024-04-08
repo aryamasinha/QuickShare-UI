@@ -43,8 +43,8 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl" style={divStyle}>
+    <AppBar position="static" style={divStyle}>
+      <Container maxWidth="xl">
         <Toolbar disableGutters>
           <ShareIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
