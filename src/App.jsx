@@ -12,7 +12,7 @@ import { Button as BaseButton, buttonClasses } from '@mui/base/Button';
 
 const divStyle = {
 
-  color: '#1976d2',
+  color: '#003C43',
 
 };
 

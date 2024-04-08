@@ -17,6 +17,12 @@ import ShareIcon from '@mui/icons-material/Share';
 const pages = ['Product', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
+
+const divStyle = {
+    backgroundColor: '#77B0AA',
+  
+  };
+  
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -38,7 +44,7 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" style={divStyle}>
         <Toolbar disableGutters>
           <ShareIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
@@ -52,7 +58,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: '#fff',
               textDecoration: 'none',
             }}
           >
@@ -66,7 +72,7 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="#fff"
             >
               <MenuIcon />
             </IconButton>
