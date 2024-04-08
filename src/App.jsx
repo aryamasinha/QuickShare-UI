@@ -65,7 +65,7 @@ export default function App() {
     
     <ResponsiveAppBar></ResponsiveAppBar>
     <br></br>
-    <h2 style={btnStyle}>Enter Text</h2>
+    <h2 style={btnStyle}>ENTER TEXT</h2>
     <br></br>
       <center>
       <Textarea
