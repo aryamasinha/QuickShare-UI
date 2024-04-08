@@ -7,7 +7,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import ButtonAppBar from './Navbar';
+import ResponsiveAppBar from './Navbar';
 import { Button as BaseButton, buttonClasses } from '@mui/base/Button';
 
 const divStyle = {
@@ -95,7 +95,7 @@ export default function App() {
   <center>
     <main>
     
-    <ButtonAppBar></ButtonAppBar>
+    <ResponsiveAppBar></ResponsiveAppBar>
     <h2 style={divStyle}>Enter Code Snippet</h2>
       <center>
       <Textarea
